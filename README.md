@@ -1,4 +1,4 @@
-# Project A.L.I.E.N. WS2812B Test Code
+# Project A.L.I.E.N. LED Strip Test Code
 
 <!-- Harry Boyd - 13/08/2024 - github.com/hboyd255 -->
 
