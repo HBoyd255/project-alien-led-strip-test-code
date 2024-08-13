@@ -26,11 +26,25 @@
 
 #include <Arduino.h>
 
+#include "pixels.h"
 #include "systemInfo.h"
 
-void setup() { Serial.begin(SERIAL_BAUD_RATE); }
+Pixels pixels(PIXELS_DATA_PIN, LED_COUNT);
+
+void setup() {
+    Serial.begin(SERIAL_BAUD_RATE);
+
+    pixels.setup();
+}
 
 void loop() {
-    Serial.println("Hello, World!");
+    Serial.println("Red");
+    pixels.setAll(Colour(255, 0, 0), true);
+    delay(1000);
+    Serial.println("Green");
+    pixels.setAll(Colour(0, 255, 0), true);
+    delay(1000);
+    Serial.println("Blue");
+    pixels.setAll(Colour(0, 0, 255), true);
     delay(1000);
 }

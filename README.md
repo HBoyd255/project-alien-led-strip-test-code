@@ -7,3 +7,10 @@ on the Project A.L.I.E.N. robot.
 
 The datasheet for the WS2812B LEDs can be found
 [here](https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf).
+
+# Acknowledgments
+
+This code uses the NeoPixelBus library by Makuna. The library can be found
+[on GitHub](https://github.com/Makuna/NeoPixelBus).
+
+
